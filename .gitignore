@@ -1,0 +1,20 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+/.quarto/
+
+Data/
+
+_extensions/
+
+Figures/
+
+True.bib
+
+# OneDrive metadata
+*.tmp
+*.lnk
+~$*
+desktop.ini

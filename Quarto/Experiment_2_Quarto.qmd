@@ -1,0 +1,71 @@
+---
+title: "Impact of Source in Belief Updating in Human Deepfake Detection"
+lang: en-GB
+shorttitle: "Source and Deepfake Detection"
+author:
+  - name: R.G. Lamers James
+    corresponding: true
+    orcid: XXXXX
+    email: 2344831@swansea.ac.uk
+    affiliations:
+      - name: Swansea University
+        department: Department of Psychology
+        address: XXX
+        city: Swansea
+        region: Swansea
+        postal-code: SA2 XXX
+abstract: "This is my abstract."
+keywords: [Deepfake Detection, Belief-Updating, Advice-Taking]
+author-note: |
+  This is my author note.
+disclosures: |
+  The author has no conflict of interest to declare.
+format: 
+ apaquarto-html: 
+    toc: true
+bibliography: TRUE.bib
+execute:
+  echo: false #Hide all code by default
+---
+
+# Methods
+
+## Openness and Transparency
+
+The study was pre-registered on the Open Science framework (OSF). All materials, code and data-sets are accessible through the OSF and are stored in an R-Project file ~~**(add link here)**~~. The study received ethical approval by the Swansea University psychology research ethics committee (ethics approval number: 1 2025 9079 12341).
+
+## Recruitment
+
+To determine the sample size required to detect the effect sizes for the main analyses of interest, a simulation-based power analysis for generalised mixed effects models was run using the R-package simr [@greenSIMRPackagePower2016], using guidelines specified in @kumleEstimatingPowerGeneralized2021. As there was no prior data for the exact analysis conducted the random variance for video and participant was ascertained using data from the control condition in our previous study **(REF)**. This study used the same videos, and detection accuracy as the DV, providing the closest proxy for the random effects. Confidence and AOTS were also simulated using the distriubtion ascertained from the same data. As specified in @kumleEstimatingPowerGeneralized2021 unstandardised effect sizes were used to specify fixed effects. For belief updating, the base-rate for the control condition was set at 5%, whilst the belief updating rate for the advice conditions was based on findings from [@grohDeepfakeDetectionHuman2022], which found that 12% of participants changed their answer after being provided with an AI model's prediction. The fixed effect of the interaction between condfidence and advice was based on the findings from @chongHumanConfidenceArtificial2022, which found that participant's self confidence was negatively predictive of their likelihood of accepting an AI suggestion (log odds coefficient of -1). As confidence in @chongHumanConfidenceArtificial2022 was measured on a 1-5 scale, confidence was re-scaled to reflect this. As there are no comparable effect sizes for belief updating for AOTS, a medium effect of a 60% increase in odds was used (log odds of 0.47) for both the main effect of AOTS and the interaction between AOTS and advice. For the model examining detection accuracy the base rate of 58% was used whilst the accuracy for the advice conditions was specified as 65%, based on findings from [@grohDeepfakeDetectionHuman2022]. All other fixed effects were kept consistent with the first model, as differences in belief updating are expected to reflect differences in detection accuracy. These models indicated a sample of 200 participants (50 per group) was required for the effect of source type and confidence. However a larger sample (600 participants; 150 per group) was collected to ensure there was enough power to detect the moderator effect of AOTS. Full justifications for the (unstandardised) effect sizes used are provided on the OSF.
+
+To participate, participants, were required to be aged 18 or over and be fluent in English, they were also required to have a computer or tablet, which had access to audio. To be included in the final sample, participants were required to spend at least 15 minutes to complete the study. Recruitment was fully carried out on the recruitment platform Prolific Academic, recruiting from the United Kingdom. Participants were paid £3 for participation in the study.
+
+## Materials
+
+### Stimuli
+
+To allow the use of real data for the warnings provided in the second part of the task, the 20 videos used were taken from our previous study **(REF)**, which was originally based on the ones selected by [@somorayProvidingDetectionStrategies2023] from the Deepfake Detection Challenge [DFDC; @dolhanskyDeepFakeDetectionChallenge2020] dataset. Videos were originally selected by @somorayProvidingDetectionStrategies2023 under the inclusion criteria of consistent lighting, containing only one actor and that no actor wore glasses. The 20 videos were also balanced for both gender and skin-colour. Unlike our first study, which used two mirrored sets of videos, where one set included the deepfake version of the video and the other the authentic video, only the first set of videos was used in this study. This was done to ensure the warnings given were consistent and not dependent on the video set. The videos were comprised of 10 authentic and 10 deepfake videos. Videos were displayed at a resolution of 500x800px format and were shown in the context of a social media post, however to reduce potential confounds no engagement statistics (likes, comments) were shown. The videos depict unknown actors talking about uncontroversial topics, who have consented to having the videos used for research purposes.
+
+### Questionnaires
+
+Three questionnaires were administered in the study. Like our first study (**REF**), participants were asked to complete the 13-item Active Open-Minded Thinking (AOT) scale by @stanovichActivelyOpenMindedThinking2023 to assess their open-mindedness and their tendency to weight competing explanations of evidence. The scale is measured on a six-point Likert scale with no neutral point, from disagree strongly (1) to agree strongly (6). An example question used in the scale is that "People should revise their conclusions in response to relevant information". To provide additional continuity with our first study, participants were also asked to indicate how much social media they consume each week [from @nasConspiracyThinkingSocial2024] and to complete the one-item Conspiracy Thinking (CT) scale by @lantianMeasuringBeliefConspiracy2016. This scale involves providing participants with a short paragraph explaining what conspiracy theories are, and then asks participants to indicate their agreement with the following statement: 'I think that the official version of the events given by the authorities very often hides the truth'. The scale is assessed on a nine-point scale (1: completely false, 9: completely true).
+
+To assess participant's trust and confidence in themselves and different sources to accurately spot deepfakes, a scale adapted from Weikmann et al.'s [-@weikmannDeceptionHowFalling2024a], *deepfake self-efficacy* scale was used. In addition to assessing participant's self-efficacy assessments regarding deepfake detection the scale was adapted to also include measures of participant's confidence in AI models, the consensus of other individuals and of professional independent fact-checkers to discern when media has been manipulated. An example question was: 'I am confident in Artificial Intelligence (AI) models ability to spot when media has been manipulated'. The scale was answered on a seven-point scale from strongly disagree (1) to strongly agree (7).
+
+### Procedure
+
+The procedure for the study roughly aligned with that in our previous study. Following the participant information sheet and informed consent form participants were asked to indicate their age and gender, which was followed by the AOTS and CT scale. Participants were then asked to indicate their weekly media usage and to complete the adapted *deepfake self-efficacy* scale, which also included assessments on their confidence in different sources to detect manipulated media. Like our previous study, participants were then provided with instructions on the task, and a definition of what a deepfake is. This definition was: "A deepfake video is a video that has been created or manipulated using artificial intelligence (AI). AI algorithms might, for example, swap the face of a person with the face of another person, or manipulate the content to make the person in the video appear to be saying something they did not say". Participants were not informed of the composition of the videos (i.e., half the videos were real, and half were fake), in contrast to previous studies [@kobisFooledTwicePeople2021; @somorayProvidingDetectionStrategies2023], as to avoid participant's hedging their guesses to match the prevalence rate of the videos.
+
+Following the instructions, participants were required to correctly answer two comprehension questions [from @somorayProvidingDetectionStrategies2023] before proceeding to the first task phase. All participants were then asked to sequentially assess the veracity of 20 videos (presented in a randomised order), in a two-choice task, either indicating they believed the video to be real, or a deepfake. For each video, participants were also asked to indicate their confidence in their answer by asking the participant to estimate the probability that their answer was correct on a scale from 50% to 100%. To mitigate potential mid-point biases, the slider was only shown after first clicking on the scale.
+
+After completing all 20 videos participants were provided additional instructions on the second trial phase, where they were asked to repeat the task, with the same 20 videos. Participants who were randomly assigned to one of the advice conditions were also told that videos may be accompanied by a warning, indicating if the video was predicted to be a deepfake. Depending on the condition assigned, the warning was either labelled to come from an AI detection model, the majority decision of viewers that have previously watched the video or by professional independent fact-checkers. A screenshot example of the warning was also provided alongside the textual information [@fig-examplewarning]. Participants assigned to the control condition did not receive this information and were simply asked to repeat the task a second time.
+
+![An Example Warning Provided](Figures/Example_warning_AI.png){#fig-examplewarning}
+
+### Data Analysis
+
+# Results
+
+# Discussion
+
+# References
